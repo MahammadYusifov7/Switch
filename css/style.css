@@ -1,5 +1,5 @@
 :root {
-    --yasil: #54d154 ;
+    --yasil: #54d154;
 }
 header {
     display: flex;
@@ -11,26 +11,10 @@ header {
     padding: 5px 30px;
     background: url('../img/headerbg.jpg') center/cover;
 }
-menu li { padding: 0 10px;}
+menu li { padding: 0 10px; }
 menu li a {
     font: bold 1em 'Proxima Nova';
     color: #fff;
-}
-h1 {
-    font: bold 2em 'Montserrat';
-    text-transform: capitalize;
-    color: #fff;
-}
-form input {
-    border-radius: 14px;
-}
-#s1 {
-    width: 177px;
-    height: 27px;
-    border: none;
-    font-size: 16px;
-    color: #111111;
-    font-family: "Myriad Pro";
 }
 #title button {
     margin-top: 40px;
@@ -58,22 +42,318 @@ form input {
     font-family: "Proxima Nova";
     text-align: center;
 }
+h1 {
+    font: bold 2em Montserrat;
+    text-transform: capitalize;
+    color: #fff;
+}
+h2 { 
+    font: 1.25em Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #828181;
+}
+h3 {
+    font: bold 1.5em 'Proxima Nova';
+    color: #828181;
+}
+h6 {
+    font: 1em 'Myriad Pro';
+    color: #b7b3b3;
+}
+#mainhr { 
+    border: none;
+    height: 2px;
+    width: 40px;
+    background: #828181;
+}
+.bg-yasil h2 { color: #207b20 }
+.bg-yasil hr { background: #207b20 }
+.bg-yasil h6 { color: #2b9b2b }
 
+#search { display: flex; }
+#search>* {
+    height: 27px;
+    border: none;
+    outline: none;
+    background: #ffffffcc;
+    padding: 7px 15px;
+}
+#search [type="search"] { border-radius: 1em 0 0 1em; }
+#search [type="submit"] { border-radius: 0 1em 1em 0; }
+#search [type="submit"] img { height: 14px }
+
+main section { 
+    padding: 40px 0;
+    text-align: center; 
+}
+
+#art3 { padding: 48px 0 }
+#art3 article { padding: 24px 1em }
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #e1f3e1;
+    color: var(--yasil);
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    font-size: 2em;
+}
+
+#btn3  { 
+    display: flex; 
+    justify-content: center;
+    padding: 50px 0;
+} 
+#btn3 button {
+    background: #fff;
+    color: #2b9b2b;
+    height: 33px;
+    border: 1px solid #2b9b2b;
+    font: 1em 'Proxima Nova';
+    padding: 5px 21px
+}
+#btn3 button:first-child { border-radius: 1em 0 0 1em; }
+#btn3 button:last-child { border-radius: 0 1em 1em 0; }
+
+#gallery { 
+    display: flex;
+    flex-direction: column;
+ } 
+#gallery img {
+    width: 100%;
+    object-fit: cover;
+    padding: 5px 10px;
+}
+
+.bg-ag { background-color: #fff; }
+.bg-yasil { background-color: var(--yasil); }
+.bg-boz { background-color: #f1f1f1; }
+#basliq {
+    max-width: 90%;
+    margin: auto;
+    font-size: 1em 'Proxima Nova';
+    color: #444;
+    text-align: center;
+    margin-top: 50px;
+}
+.ttext2 img {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #fff;
+    border: 2px solid #e1e1e1;
+}
+.ttext2 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 17px;
+}
+#ceo {
+    color: gray;
+    margin-top: 5px;
+}
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.logos img {
+    height: 50%;
+    width: 50%;
+}
+.logosbutton {
+    width: 186px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #dddcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.logosbutton a {
+    font-size: 18px;
+    color: #a59d9d;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+.staff {
+    padding-left: 50px;
+}
+#teamhr {
+    width: 2px;
+    height: 77px;
+    background-color: #1f7b1f;
+}
+.teamtext p{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+.team {
+    padding: 50px 50px 0 0;
+}
+.teamimg img {
+    border-radius: 50%;
+    object-fit: cover/center;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #fff;
+}
+.teamicon {
+    border: 1px solid blue;
+    background-color: #c6e9c6;
+    border-radius: 14px;
+    height: 28px;
+    margin-top: 15px;
+    padding-top: 4px;
+}
+.teambutton button {
+    margin-top: 40px;
+    width: 208px;
+    height: 47px;
+    border-radius: 23px;
+    background-color: #3eba3e;
+    font: 22px "Proxima Nova" ;
+    color: #fff;
+    border: none;
+}
+.teambutton button:hover {
+    background-color: blue;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.bg-qara {background-color: black;}
+.col33 {
+    padding-right: 50px;
+}
+#postsborder {
+    border: 1px solid white;
+    border-radius: 3px;
+    border: none;
+}
+.col33 h4 {
+    font: 1em "Montserrat";
+    letter-spacing: 3px;
+    color: #ddd;
+    font-weight: 100;
+    text-align: center;
+}
+.col33 p,.posts-span span {
+    width: 316px;
+    font-size: 16px;
+    color: #ccc;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+#footerhr { 
+    border: none;
+    height: 2px;
+    width: 40px;
+    background: #828181;
+}
+.footericon {
+    border: 1px solid blue;
+    background-color: #e6e7e6;
+    border-radius: 14px;
+    height: 28px;
+    width: 70px;
+    padding-top: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+.posts img {
+    width: 53px;
+    height: 53px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.posts{
+    display: flex;
+    text-align: left;   
+}
+form input {
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+form textarea {
+    margin-left: 44px ;
+    outline: none;
+}
 @media only screen and (min-width: 768px) {
-    nav {
+    nav { 
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    menu {
-        order: -1;
+    menu { 
+        order: -1; 
         display: flex;
     }
     menu li a:hover, menu li a.active {
         font-weight: bold;
-        border-top: 5px solid var(--yasil);
-        transition: .3s ease;
-        color: #54d154;
+        border-top: 5px solid var(--yasil)
     }
-    h1 {font-size: 3.5em;}
+    h1 { font-size: 3.5em; }
+    #art3 { display: flex; }
+    .icon {
+        width: 140px;
+        height: 140px;
+        border-radius: 30px;
+        font-size: 4.5em;
+    }
+    #btn3 button.active, #btn3 button:hover {
+        background: #2b9b2b;
+        color: #fff;
+    }
+    #gallery { 
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; 
+        max-width: 980px;
+        margin: auto;
+        gap: 30px
+    } 
+    #gallery img {
+        width: 160px;
+        height: 160px;
+    }
+    #basliq {
+        max-width: 30%;
+    }
+    .logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 980px;
+        margin:auto;
+        gap: 100px;
+    }
+    .logos img {
+        width: 150px;
+    }
+    .staff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    form input {
+        display: flex;
+    }
 }
